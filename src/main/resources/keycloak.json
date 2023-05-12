@@ -1,0 +1,22 @@
+[
+  {
+  "realm": "pomfret-admin",
+  "auth-server-url": "http://sso-dev.ibpaas.pomfret.cloud/auth",
+  "ssl-required": "external",
+  "resource": "onhand",
+  "credentials": {
+    "secret": "2657614e-912c-4572-a0bd-4d042a7cd158"
+  }
+},
+
+  {
+    "realm": "demoentoss",
+    "auth-server-url": "http://sso-dev.ibpaas.pomfret.cloud/auth",
+    "ssl-required": "external",
+    "resource": "onhand",
+    "credentials": {
+      "secret": "2657614e-912c-4572-a0bd-4d042a7cd158"
+    }
+  }
+
+  ]

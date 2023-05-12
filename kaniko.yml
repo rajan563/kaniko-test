@@ -1,24 +1,23 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: build-kaniko2
+  name: build-kaniko3
 spec:
   containers:
   - name: kaniko-test
     image: gcr.io/kaniko-project/executor:debug
     args:
-    - "--dockerfile=Dockerfile"
-    - "--context=git@gitlab.com:entoss/pomfret-esb.git"
-    - "--git=branch=fiata-efbl-r1.0.0"
+    - "--context=git@github.com:rajan563/kaniko-test.git"
+    - "--git=branch=main"
     - "--destination=registry.digitalocean.com/springbootrajan/fiata-app"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
-   env:
+    env:
     - name: GIT_USERNAME
       value: rajan563
     - name: GIT_PASSWORD
-      value: Welcomee@5631
+      value: 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
   restartPolicy: Never
   volumes:
   - name: kaniko-secret

@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FiataEfblApplication {
+public class KanikoFiataEfblApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(FiataEfblApplication.class, args);
+		SpringApplication.run(KanikoFiataEfblApplication.class, args);
 	}
 }
